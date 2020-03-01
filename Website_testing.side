@@ -1,0 +1,53 @@
+{
+  "id": "776de4f2-21a8-42b1-ac9d-85dcaea275c4",
+  "version": "2.0",
+  "name": "Website_testing",
+  "url": "https://www.facebook.com/",
+  "tests": [{
+    "id": "60b10dae-5515-4152-92d4-8e167c58d7eb",
+    "name": "Login_Page",
+    "commands": [{
+      "id": "dae1680c-55c5-478b-94e4-b5f319f79012",
+      "comment": "Open the provided link",
+      "command": "open",
+      "target": "https://www.facebook.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db56252d-1069-4f58-8412-612fde1f5490",
+      "comment": "In email field place the value \"admin@.com\"",
+      "command": "type",
+      "target": "id=email",
+      "targets": [],
+      "value": "admin@email.com"
+    }, {
+      "id": "b95c4a8e-34c8-4c3d-bac5-3d7c3de8937e",
+      "comment": "In password field place the value \"password\"",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [],
+      "value": "password"
+    }, {
+      "id": "d4a95489-8770-4f63-81de-3ec8b16456cc",
+      "comment": "click the login button",
+      "command": "click",
+      "target": "id=u_0_b",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "12b556af-cd2c-4566-91f4-c2e13a21ae87",
+    "name": "Sign_up_page",
+    "commands": []
+  }],
+  "suites": [{
+    "id": "8d6b7454-8b52-4898-9db8-0a14986d7d05",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["60b10dae-5515-4152-92d4-8e167c58d7eb"]
+  }],
+  "urls": ["https://www.facebook.com/"],
+  "plugins": []
+}
